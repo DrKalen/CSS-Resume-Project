@@ -1,0 +1,59 @@
+/* Palette hex codes
+Light yellow #F5FFC6
+dark blue #8377D1
+light blue #B4E1FF
+Pink #FFACE4
+Light green #C1FF9B */
+
+/* Global Styles
+--------------------- */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+a {
+    color: #C1FF9B;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Header and Footer
+--------------------- */
+header, footer {
+    background: #8377D1;
+    color: #B4E1FF;
+}
+
+header h1, header h2 {
+    color: #F5FFC6
+
+}
+
+/* Work Experience
+--------------------- */
+.work {
+    background: #F5FFC6 ;
+}
+
+/* Education
+--------------------- */
+
+.education {
+    background: #FFACE4;
+}
