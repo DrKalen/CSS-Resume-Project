@@ -34,7 +34,7 @@ a:hover {
 }
 
 .content-wrapper {
-    width: 950px;
+    max-width: 800px;
     padding: 5px;
     margin: 0 auto;
 }
