@@ -33,6 +33,12 @@ a:hover {
     text-decoration: none;
 }
 
+.content-wrapper {
+    width: 950px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
 /* Header and Footer
 --------------------- */
 header, footer {
