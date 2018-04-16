@@ -8,6 +8,25 @@ Light green #C1FF9B */
 /* Global Styles
 --------------------- */
 
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* To make sure floating elements are cleared */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -27,6 +46,10 @@ h2 {
     margin-top: 0;
 }
 
+h3 {
+    margin: 0;
+}
+
 a {
     color: #C1FF9B;
 }
@@ -41,6 +64,22 @@ a:hover {
     margin: 0 auto;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
 /* Header and Footer
 --------------------- */
 header, footer {
@@ -49,9 +88,20 @@ header, footer {
 }
 
 /* Header only */
-header h1, header h2 {
-    color: #F5FFC6
+header {
+    text-align: center;
+}
 
+
+header h1, header h2 {
+    color: #F5FFC6;
+    margin: 0;
+}
+
+.profile-img {
+    width: 300px;
+    border-radius: 50%;
+    /* float: left; */
 }
 
 /* Footer only */
@@ -69,6 +119,28 @@ footer {
 --------------------- */
 .work {
     background: #F5FFC6 ;
+}
+
+.col-left {
+    width: 30%;
+    float: left;
+}
+
+.col-right {
+    width: 70%;
+    float: left;
+}
+
+h3 ~ p {
+    margin: 0;
+}
+
+.job-description {
+    margin-bottom: 25px;
+    
+}
+.job-description p:first-of-type {
+    margin-top: 0;
 }
 
 /* Education

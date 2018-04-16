@@ -10,8 +10,14 @@
 <body>
     <!-- // Intro -->
     <header>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#work">Work Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
         <div class="content-wrapper">
-            <img src="images/!kalen_hammann.jpg" alt="Kalen Hammann">
+            <img class="profile-img" src="images/!kalen_hammann.jpg" alt="Kalen Hammann">
             <h1>Kalen Hammann</h1>
             <h2>Job title or tagline</h2>
             <p>Add your profile summary here. You can have several paragraphs or add links.</p>
@@ -20,32 +26,36 @@
     
     <main> 
         <!-- // Work Experience -->
-        <section class="work">
-            <div class="content-wrapper">
+        <section id="work" "class="work">
+            <div class="content-wrapper clearfix">
                 <h2>Work Experience</h2>
 
                 <!-- Job Details: copy this whole block to add more jobs -->
-                <h3>Job title</h3>
-                <p>Company Name</p>
-                <p>Date at job</p>
-                
+                <div class="col-left">
+                    <h3>Job title</h3>
+                    <p class="uppercase">Company Name</p>
+                    <p>Date at job</p>
+                </div>
+                <div class="col-right job-description">
                 <!-- Add as many paragraphs as you need. -->
-                <p>Job summary.</p>
                 
-                <!-- This list can be deleted if you don't want to use it. -->
-                <p>Optional list:</p>
-                <ul>
-                    <li>Created...</li>
-                    <li>Lead...</li>
-                    <li>Responsible for</li>
-                </ul>
-                <!-- end of Job Details block. -->
+                    <p>Job summary.</p>
+                    
+                    <!-- This list can be deleted if you don't want to use it. -->
+                    <p>Optional list:</p>
+                    <ul>
+                        <li>Created...</li>
+                        <li>Lead...</li>
+                        <li>Responsible for</li>
+                    </ul>
+                    <!-- end of Job Details block. -->
+                </div>
             </div>
         </section>
 
 
         <!-- // Education -->
-        <section class="education">
+        <section id="education" class="education">
             <div class="content-wrapper">
                 <h2>Education</h2>
 
@@ -61,7 +71,7 @@
     </main>
     
     <!-- // Footer & contact info -->
-    <footer>
+    <footer id="contact">
         <div class="content-wrapper">
             <h2>Let's Keep in Touch!</h2>
             
