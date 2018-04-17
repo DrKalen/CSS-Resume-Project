@@ -60,7 +60,7 @@ a:hover {
 
 .content-wrapper {
     max-width: 800px;
-    padding: 50px;
+    padding: 60px 50px;
     margin: 0 auto;
 }
 
@@ -68,9 +68,22 @@ a:hover {
     text-transform: uppercase;
 }
 
+.btn {
+    text-decoration: none;
+    background: red;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+}
+
 /* Navigation */
 nav {
     text-align: center;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 nav a {
@@ -90,6 +103,8 @@ header, footer {
 /* Header only */
 header {
     text-align: center;
+    padding: 50px;
+    position: relative;
 }
 
 
@@ -102,6 +117,12 @@ header h1, header h2 {
     width: 300px;
     border-radius: 50%;
     /* float: left; */
+}
+
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* Footer only */
